@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>It Was Always You ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:'Poppins',sans-serif;
+  background:#fff;
+  color:#222;
+  overflow-x:hidden;
+}
+
+/* ===== INTRO ===== */
+#intro{
+  position:fixed;inset:0;
+  background:#000;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  z-index:9999;
+}
+.big-heart{
+  width:190px;height:190px;
+  background:#ff2f5b;
+  transform:rotate(-45deg);
+  animation:beat .9s infinite;
+}
+.big-heart::before,.big-heart::after{
+  content:"";
+  width:190px;height:190px;
+  background:#ff2f5b;
+  border-radius:50%;
+  position:absolute;
+}
+.big-heart::before{top:-95px;left:0}
+.big-heart::after{left:95px;top:0}
+#intro p{
+  margin-top:30px;
+  font-size:32px;
+  color:white;
+  font-family:'Pacifico',cursive;
+}
+@keyframes beat{
+  0%,100%{transform:scale(1) rotate(-45deg)}
+  50%{transform:scale(1.35) rotate(-45deg)}
+}
+
+/* ===== PAGE 1 ===== */
+.page{display:none;animation:fadeIn 2s ease forwards}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+
+.hero{height:100vh;position:relative}
+.hero img{width:100%;height:100%;object-fit:cover}
+.hero::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(to top,rgba(0,0,0,.7),transparent);
+}
+.hero h1{
+  position:absolute;bottom:40px;width:100%;
+  text-align:center;
+  font-family:'Pacifico',cursive;
+  font-size:60px;color:white;
+}
+
+.section{
+  max-width:900px;
+  margin:70px auto;
+  padding:0 20px;
+}
+.section img{
+  width:100%;
+  border-radius:22px;
+  box-shadow:0 30px 60px rgba(0,0,0,.25);
+}
+.section p{
+  margin-top:30px;
+  font-size:28px;
+  line-height:2;
+  opacity:0;
+  transform:translateY(30px);
+  transition:1.2s;
+}
+.section p.show{opacity:1;transform:none}
+
+/* ===== CONTINUE BUTTON ===== */
+.continue{
+  text-align:center;
+  margin:100px 0;
+}
+.continue button{
+  padding:18px 44px;
+  font-size:24px;
+  border:none;
+  border-radius:50px;
+  background:#ff2f5b;
+  color:white;
+  cursor:pointer;
+}
+
+/* ===== PAGE 2 (PROPOSAL PAGE) ===== */
+#proposalPage{
+  min-height:100vh;
+  display:none;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  text-align:center;
+  padding:40px 20px;
+}
+#proposalPage h2{
+  font-family:'Pacifico',cursive;
+  font-size:52px;
+  margin-bottom:30px;
+}
+#proposalPage p{
+  font-size:30px;
+  max-width:800px;
+  line-height:2;
+  margin-bottom:40px;
+}
+.buttons button{
+  padding:20px 50px;
+  margin:15px;
+  font-size:26px;
+  border:none;
+  border-radius:50px;
+  cursor:pointer;
+}
+#yes{background:#ff2f5b;color:white}
+#no{background:#ddd}
+
+#answer{
+  margin-top:40px;
+  font-size:40px;
+  font-family:'Pacifico',cursive;
+  color:#ff2f5b;
+  opacity:0;
+  transition:1s;
+}
+#answer.show{opacity:1}
+
+/* FLOATING HEARTS */
+.floating{
+  position:fixed;
+  bottom:-40px;
+  font-size:30px;
+  animation:float 7s linear forwards;
+}
+@keyframes float{
+  to{transform:translateY(-120vh);opacity:0}
+}
+
+/* MUSIC */
+.music-btn{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:black;
+  color:white;
+  padding:14px 24px;
+  border-radius:40px;
+}
+
+@media(max-width:768px){
+  .hero h1{font-size:46px}
+  .section p{font-size:24px}
+  #proposalPage h2{font-size:44px}
+  #proposalPage p{font-size:24px}
+}
+</style>
+</head>
+
+<body>
+
+<!-- INTRO -->
+<div id="intro">
+  <div class="big-heart"></div>
+  <p>Tap the heart ❤️</p>
+</div>
+
+<!-- PAGE 1 -->
+<div class="page" id="storyPage">
+
+  <section class="hero">
+    <img src="photos/hero.jpg">
+    <h1>Meri ghar ki laxmi 🧿</h1>
+  </section>
+
+  <div class="section">
+    <img src="photos/1.jpg">
+    <p>
+      This was the beginning 🤍.  
+      Before feelings had names, before courage existed,  
+      talking to you slowly became my favourite habit.  
+      One message from you could fix my entire day 💬❤️.
+    </p>
+  </div>
+
+  <div class="section">
+    <img src="photos/2.jpg">
+    <p>
+      The first time I truly saw you in college 👀,  
+      my eyes refused to look anywhere else.  
+      That day my heart knew something  
+      my mind was too scared to accept 🙏🛕.
+    </p>
+  </div>
+
+  <div class="section">
+    <img src="photos/3.jpg">
+    <p>
+      Late night talks 🌙, fears 🥺, yes and no 💔❤️,  
+      confusion and attachment — everything came together.  
+      And through it all, I never stopped choosing you 🫶.
+    </p>
+  </div>
+
+  <div class="section">
+    <img src="photos/4.jpg">
+    <p>
+      You are not just my girlfriend.  
+      You are my peace 🕊️, my strength 💪, my home 🏠.  
+      Duniya ek taraf 🌍… aur tu ek taraf ♾️.
+    </p>
+  </div>
+
+  <div class="continue">
+    <button onclick="goProposal()">Continue ❤️</button>
+  </div>
+
+</div>
+
+<!-- PAGE 2 -->
+<div id="proposalPage">
+
+  <h2>Before I ask you… 🥹</h2>
+
+  <p>
+    I don’t promise perfection.  
+    I promise effort.  
+    I promise respect.  
+    I promise choosing you —  
+    in every situation, in every lifetime 💍❤️.
+  </p>
+
+  <h2>Will you be my Valentine?</h2>
+
+  <div class="buttons">
+    <button id="yes">YES 💖</button>
+    <button id="no">NO 🙈</button>
+  </div>
+
+  <div id="answer">I knew it… forever us 🥹❤️</div>
+
+</div>
+
+<!-- MUSIC -->
+<audio id="bgm" loop>
+  <source src="https://cdn.pixabay.com/audio/2022/03/15/audio_6bba8fa8b3.mp3">
+</audio>
+<div class="music-btn" onclick="toggleMusic()">🎵 Music</div>
+
+<script>
+const intro=document.getElementById("intro");
+const story=document.getElementById("storyPage");
+const proposal=document.getElementById("proposalPage");
+const music=document.getElementById("bgm");
+
+/* INTRO */
+intro.onclick=()=>{
+  intro.style.display="none";
+  story.style.display="block";
+  music.play();
+};
+
+/* SCROLL STORY */
+const reveal=()=>{
+  document.querySelectorAll(".section p").forEach(p=>{
+    if(p.getBoundingClientRect().top<window.innerHeight-100){
+      p.classList.add("show");
+    }
+  });
+};
+window.addEventListener("scroll",reveal);
+
+/* GO PROPOSAL */
+function goProposal(){
+  story.style.display="none";
+  proposal.style.display="flex";
+  window.scrollTo(0,0);
+}
+
+/* YES NO */
+const no=document.getElementById("no");
+const yes=document.getElementById("yes");
+const ans=document.getElementById("answer");
+no.onmouseover=()=>{
+  no.style.position="absolute";
+  no.style.left=Math.random()*70+"%";
+  no.style.top=Math.random()*70+"%";
+};
+yes.onclick=()=>ans.classList.add("show");
+
+/* FLOATING HEARTS */
+setInterval(()=>{
+  const h=document.createElement("div");
+  h.className="floating";
+  h.innerText="❤️";
+  h.style.left=Math.random()*100+"vw";
+  document.body.appendChild(h);
+  setTimeout(()=>h.remove(),7000);
+},700);
+
+function toggleMusic(){music.paused?music.play():music.pause();}
+</script>
+
+</body>
+</html>
